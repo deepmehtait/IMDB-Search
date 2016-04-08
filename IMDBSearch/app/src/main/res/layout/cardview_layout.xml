@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        android:elevation="15dp"
+        android:background="#ffffff"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/primary_light"
+        android:padding="2dp"
+        >
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noimg"
+        android:id="@+id/posterImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieTitle"
+            android:text="Movie Name"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/posterImage"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieYear"
+            android:text="2016"
+            android:layout_toRightOf="@+id/posterImage"
+            android:layout_below="@+id/movieTitle"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
